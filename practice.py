@@ -188,25 +188,25 @@ BINARY TRIANGLE
 0 1 0 1
 1 0 1 0 1
 """
-# n=int(input())
-# i=1
-# while i<=n:
-#     m=[]
-#     j=1
-#     while j<=i:
-#         if i%2==0:
-#             if j%2==0:
-#                 m.append('1')
-#             else:
-#                 m.append('0')
-#         else:
-#             if j%2==0:
-#                 m.append("0")
-#             else:
-#                 m.append('1')
-#         j+=1
-#     print(" ".join(m))
-#     i+=1
+n=int(input())
+i=1
+while i<=n: # i=1,i=2
+    m=[]
+    j=1
+    while j<=i: #j=1,j=1,2
+        if i%2==0:# i=2 yes,yes
+            if j%2==0: #j=1,j=2=yes
+                m.append('1')#m=['0',1']
+            else:
+                m.append('0') #m=['0']
+        else:
+            if j%2==0:
+                m.append("0")
+            else:
+                m.append('1') #m=['1']
+        j+=1 #j=2 #j=3
+    print(" ".join(m)) # 1 # 0 1
+    i+=1
 
 """
 PASCAL TRIANGLE
